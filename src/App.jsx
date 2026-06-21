@@ -21,14 +21,18 @@
 // export default App;
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./pages/contact";
+import About from "./pages/about";
+import Home from "./pages/home";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>This is home page</h1>} />
-        <Route path="/about" element={<h2>this is about page</h2>} />
-        <Route path="/contact" element={<h3>this is contact page</h3>} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/:error" element={<h2>Error not found</h2>} />
       </Routes>
     </BrowserRouter>
   );
