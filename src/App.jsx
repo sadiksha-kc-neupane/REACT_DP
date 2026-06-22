@@ -24,6 +24,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Home from "./pages/home";
+import Signup from "./pages/signup";
+import Signin from "./pages/signin";
 
 function App() {
   return (
@@ -32,6 +34,9 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+
         <Route path="/:error" element={<h2>Error not found</h2>} />
       </Routes>
     </BrowserRouter>
