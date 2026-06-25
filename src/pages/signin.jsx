@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar";
+import { Link } from "react-router-dom";
 
 function Signin() {
   return (
@@ -56,6 +57,7 @@ function Signin() {
           </form>
         </div>
       </div>
+      <Link to="/forgotPassword">Forgot Password</Link>
     </>
   );
 }

@@ -17,13 +17,10 @@ function Navbar() {
         </div>
         <ul className="hidden items-center justify-center gap-6 md:flex">
           <li className="pt-1.5 font-dm text-sm font-medium text-slate-700">
-            <a href="#">Pricing</a>
+            <a href="#">Home</a>
           </li>
           <li className="pt-1.5 font-dm text-sm font-medium text-slate-700">
-            <a href="#">Blog</a>
-          </li>
-          <li className="pt-1.5 font-dm text-sm font-medium text-slate-700">
-            <a href="#">Docs</a>
+            <Link to="/Product">Product </Link>
           </li>
         </ul>
         <div className="flex-grow" />

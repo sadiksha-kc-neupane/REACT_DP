@@ -26,16 +26,22 @@ import About from "./pages/about";
 import Home from "./pages/home";
 import Signup from "./pages/signup";
 import Signin from "./pages/signin";
+import Forgot from "./pages/forgotPassword";
+import Otp from "./pages/otp";
+import Product from "./pages/Product";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/forgotPassword" element={<Forgot />} />
+        <Route path="/otp" element={<Otp />} />
+        <Route path="/product" element={<Product />} />
 
         <Route path="/:error" element={<h2>Error not found</h2>} />
       </Routes>
